@@ -1,27 +1,32 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-echo "[+] Starting Phase 1: Foundation & FHS Layout..."
+LOG_FILE="/var/log/app/provision.log"
 
-# 1. Create dedicated system group and user
+log() {
+    echo "[$(date +'%Y-%m-%d %H:%M:%S')] $1" | tee -a "$LOG_FILE" 2>/dev/null || echo "[$(date +'%Y-%m-%d %H:%M:%S')] $1"
+}
+
+log "=== Starting Capstone Provisioning ==="
+
+# Phase 1 Recap / Foundation Check
+log "Checking system users and directories..."
 sudo groupadd -f appgroup
 if ! id -u appuser &>/dev/null; then
     sudo useradd -r -g appgroup -s /bin/false appuser
-    echo "[+] Created service user: appuser"
+    log "Created service user: appuser"
 else
-    echo "[+] Service user appuser already exists."
+    log "Service user appuser already exists."
 fi
 
-# 2. Establish FHS-compliant directory layout
-sudo mkdir -p /opt/app
-sudo mkdir -p /var/log/app
-sudo mkdir -p /var/backups/app
-
-# 3. Lock down ownership and permissions
-sudo chown -R appuser:appgroup /opt/app
-sudo chown -R appuser:appgroup /var/log/app
-sudo chmod 750 /opt/app
-sudo chmod 750 /var/log/app
+sudo mkdir -p /opt/app /var/log/app /var/backups/app
+sudo chown -R appuser:appgroup /opt/app /var/log/app
+sudo chmod 750 /opt/app /var/log/app
 sudo chmod 700 /var/backups/app
 
-echo "[+] Phase 1 Foundation successfully applied."
+# Phase 2: Baseline Packages & Updates
+log "Updating package cache and installing baseline tools..."
+sudo apt-get update -y
+sudo apt-get install -y curl ufw fail2ban unattended-upgrades logrotate
+
+log "=== Phase 2 Automation Completed Successfully ==="
