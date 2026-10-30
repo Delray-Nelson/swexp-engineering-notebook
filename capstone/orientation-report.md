@@ -21,3 +21,27 @@
 - **Command used:** `git log -S "bug" --oneline`
 - **Introducing Commit:** `84ec003` (`INFRA-1077: add reconstructed checkout-service lab and update repository structure`) and `cc27935`.
 - **Analysis:** Traced via historical diff search to identify structural regressions introduced during checkout-service lab reconstruction.
+# Deliverable — Orientation Report
+
+## 1. Repository Structure & File Tree
+- **Command used:** `find . -maxdepth 2 -not -path '*/.*'`
+- **Summary:** The repository structure is organized around core engineering deliverables, containing `./founder/discovery-kit.md` and the root orientation report.
+
+## 2. Top Contributors & Commit Cadence
+- **Command used:** `git shortlog -sn --all` and `git log --oneline --graph --all -n 20`
+- **Top Contributors:**
+  - Hurdle TM (30 commits)
+  - Delray Nelson (7 commits)
+  - King of Games (1 commit)
+- **Cadence Summary:** Development progressed steadily through foundational setup, security hardening, founder discovery kits, and capstone artifact generation.
+
+## 3. Three Most Significant Recent Commits
+- **Command used:** `git log -n 3 --pretty=format:"%h - %an, %ar : %s"`
+1. `c1b7e37` - King of Games (*3 days ago*): `docs(capstone): add complete orientation report deliverable` — Finalizes and integrates the capstone documentation.
+2. `70ba39c` - Hurdle TM (*6 days ago*): `docs: complete Git onboarding deliverable` — Concludes initial Git workstation and version control configuration.
+3. `f2fd21c` - Hurdle TM (*8 days ago*): `feat(founder): add value proposition canvas for JBF dating app` — Establishes core market value proposition frameworks.
+
+## 4. Planted Bug Location & Introducing Commit
+- **Command used:** `git log -S "bug" --oneline`
+- **Introducing Commit:** `84ec003` (`INFRA-1077: add reconstructed checkout-service lab and update repository structure`) and `cc27935`.
+- **Analysis:** Identified via historical pickaxe search (`-S`) tracing the exact commit history where checkout-service regressions and lab restructuring occurred.
