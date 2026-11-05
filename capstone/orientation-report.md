@@ -1,4 +1,6 @@
-# Deliverable — Orientation Report
+   git add capstone/orientation-report.md
+   git commit -m "docs(capstone): correct planted bug analysis in orientation report"
+   git push origin main# Deliverable — Orientation Report
 
 ## 1. Repository Structure & File Tree
 - **Command used:** `find . -maxdepth 2 -not -path '*/.*'`
