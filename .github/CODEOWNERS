@@ -1,0 +1,7 @@
+# Default owner for all files and directories in this repository
+* @Delray-Nelson
+
+# Require explicit owner review for repository governance and submission records
+/.github/ @Delray-Nelson
+/Work Space Submissions/ @Delray-Nelson
+/capstone/ @Delray-Nelson
