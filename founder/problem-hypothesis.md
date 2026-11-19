@@ -42,8 +42,8 @@ If, after ~10 discovery interviews, I find that operations teams already have au
 
 ## Part 3 — The Reachability List
 
-1. Lead Infrastructure Engineer at Kaleris
-2. Senior DevOps Engineer (former teammate at Kaleris)
+1. Lead Infrastructure Engineer (network contact)
+2. Senior DevOps Engineer (former teammate (network contact))
 3. Web Engineering Cohort Lead (Software Engineering Program)
 4. Site Reliability Engineer (peer from Linux server environment labs)
 5. Operations Manager overseeing logistics tech infrastructure
