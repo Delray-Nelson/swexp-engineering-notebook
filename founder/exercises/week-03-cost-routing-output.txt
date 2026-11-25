@@ -1,0 +1,15 @@
+=== 1. BREAK-EVEN FINDER ===
+Workload: 2400 in / 450 out | Engineer-day anchor: $800.00
+Small cost/req: $0.000465 | Flagship cost/req: $0.018600
+Savings/req (small vs flagship): $0.018135
+Break-even volume: 44,114 requests/month
+
+=== 2. CACHE-AWARE 20-TURN AGENT SESSION (30k STABLE CONTEXT) ===
+flagship (e.g. Opus / flagship) -> Uncached: $4.3560 | Cached (0.1x): $2.1960 | Saved: $2.1600 (49.6%)
+mid-tier (e.g. Sonnet / mid)   -> Uncached: $2.1780 | Cached (0.1x): $1.0980 | Saved: $1.0800 (49.6%)
+
+=== 3. TWO-MODEL ROUTING SKETCH (JBF BANTER MODERATION & LORE SCORER) ===
+Per-turn workload: 1200 in / 180 out | Escalation rate: 15%
+Single small/item:    $0.000210
+Blended (15% esc):  $0.001470
+Single flagship/item: $0.008400
