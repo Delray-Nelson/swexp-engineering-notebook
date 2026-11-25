@@ -56,3 +56,6 @@ For **single adults suffering from dating app fatigue**, **JBF** is a **humor-fi
 
 ## Positioning Statement (Updated from Competitor Matrix)
 - **Unlike** photo-first swipe apps (Tinder/Bumble) and polite, slow-moving prompt apps (Hinge) that still leave singles stuck in repetitive small talk, **JBF Dating** leads with progressive humor prompts, cultural/lore callbacks, and two-way banter so humor-driven singles feel real conversational spark before wasting hours on dead-end chats.
+
+## Additional Customer Pain From Review Mining
+- **Performance fatigue & tone mismatch:** Users can feel pressured to 'perform' witty lines or hit awkward tone mismatches when humor prompts feel forced rather than natural back-and-forth `(source: public app store & community review themes; assumption, confidence: medium)`.
