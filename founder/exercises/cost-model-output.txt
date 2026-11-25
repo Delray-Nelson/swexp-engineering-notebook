@@ -1,0 +1,12 @@
+Measured JBF banter-eval workload: 900 in / 160 out tokens (15,000 reqs/month)
+
+Model                       Raw/Req    Adj/Req      Raw/Mo      Adj/Mo   Acc%
+----------------------------------------------------------------------------
+openai-gpt-6-luna        $ 0.000085 $ 0.000112 $      1.28 $      1.68    76%
+anthropic-haiku-5.5      $ 0.000170 $ 0.000213 $      2.55 $      3.19    80%
+openai-gpt-6.1-terra     $ 0.000850 $ 0.000988 $     12.75 $     14.83    86%
+openai-gpt-6.2-sol       $ 0.001700 $ 0.001868 $     25.50 $     28.02    91%
+anthropic-sonnet-5.5     $ 0.003400 $ 0.003696 $     51.00 $     55.43    92%
+anthropic-opus-5.5       $ 0.006800 $ 0.007083 $    102.00 $    106.25    96%
+openai-gpt-6.2-astra     $ 0.006800 $ 0.007083 $    102.00 $    106.25    96%
+anthropic-fable-5.2      $ 0.013600 $ 0.013878 $    204.00 $    208.16    98%
