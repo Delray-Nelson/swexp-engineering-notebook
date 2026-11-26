@@ -1,7 +1,6 @@
-# Default owner for all files and directories in this repository
+# Default owner for sensitive repo/project paths
 * @Delray-Nelson
-
-# Require explicit owner review for repository governance and submission records
 /.github/ @Delray-Nelson
-/Work Space Submissions/ @Delray-Nelson
-/capstone/ @Delray-Nelson
+/founder/ @Delray-Nelson
+/billing/ @Delray-Nelson
+*.yml @Delray-Nelson
